@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 7 CSS</title>
+    <link rel="stylesheet" href="./index.css" />
+    <style>
+      * {
+        /* border: 1px solid black; */
+        margin: 0;
+        padding: 0;
+        font-family: cursive;
+      }
+      /* selector {
+        property: value;
+      } */
+      /* element selector  */
+
+      p {
+        color: green;
+      }
+
+      .col-red {
+        color: red;
+      }
+
+      #myId {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: red; background-color: yellow; font-size: 12px">
+      Testing inline styling..
+    </h1>
+
+    <p>This is p tag and testing internal styling..</p>
+    <p>This is p tag and testing internal styling..</p>
+    <p>This is p tag and testing internal styling..</p>
+
+    <h3 class="col-red">This is h3 tag and testin class selector</h3>
+    <p class="col-red">Testing class</p>
+
+    <h4 id="myId">This is h4 tag and testind id selector</h4>
+
+    <h1 class="myClass">Testing external styling</h1>
+  </body>
+</html>
