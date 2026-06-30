@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 9</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .margin {
+        border: 2px solid red;
+        /* height: 70px; */
+        padding: 35px 0px;
+        /* margin: 20px; */
+        background-color: aquamarine;
+      }
+      .myCnt {
+        border: 5px solid red;
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        height: 1000px;
+      }
+      .blueCnt {
+        border: 2px solid blue;
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+        background-color: rgb(53, 53, 255);
+        color: white;
+        font-size: 42px;
+        text-align: center;
+        z-index: 5;
+      }
+      .yellowCnt {
+        z-index: 3;
+        border: 2px solid yellow;
+        width: 100%;
+        height: 200px;
+        margin: 20px;
+        background-color: rgb(255, 255, 80);
+        color: black;
+        font-size: 42px;
+        text-align: center;
+        position: relative;
+        top: 500px;
+        right: 100px;
+        left: 200px;
+        bottom: 20px;
+        position: absolute;
+        left: 100px;
+        top: 100px;
+        position: sticky;
+        top: 400px;
+        left: 1100px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="margin">Testing margin</div> -->
+    <div class="myCnt">
+      <div class="blueCnt">1</div>
+      <div class="yellowCnt">2</div>
+      <div class="blueCnt">3</div>
+    </div>
+  </body>
+</html>
