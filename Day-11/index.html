@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 11</title>
+    <style>
+      .container {
+        border: 2px solid red;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+      }
+      .contentContainer {
+        border: 2px solid blue;
+        display: flex;
+        align-items: center;
+      }
+      h1 {
+        color: blue;
+      }
+
+      .cardCnt {
+        border: 2px solid green;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .card {
+        border: 2px solid black;
+        /* width: 250px; */
+        width: 20%;
+        height: 400px;
+      }
+
+      .heroCnt {
+        border: 2px solid red;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .left {
+        border: 2px solid blue;
+      }
+      .right {
+        border: 2px solid green;
+      }
+
+      @media (max-width: 700px) {
+        h1 {
+          color: red;
+        }
+        .container {
+          flex-direction: column;
+        }
+        .contentContainer {
+          flex-direction: column;
+        }
+        .card {
+          width: 43%;
+          margin: 10px 0;
+        }
+        .heroCnt {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="../images/myimage.png" style="width: 200px; height: 200px" />
+      <div class="contentContainer">
+        <h1>Welcome to Day 11</h1>
+        <p>This is a sample HTML page for Day 11.</p>
+      </div>
+    </div>
+    <div class="cardCnt">
+      <div class="card">1</div>
+      <div class="card">2</div>
+      <div class="card">3</div>
+      <div class="card">4</div>
+    </div>
+
+    <section class="heroCnt">
+      <div class="left">
+        <h1>Learn Web Development</h1>
+        <p>Become a Full Stack Developer</p>
+      </div>
+      <div class="right">
+        <img src="../images/myimage.png" style="width: 200px; height: 200px" />
+      </div>
+    </section>
+  </body>
+</html>
